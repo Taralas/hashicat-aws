@@ -1,7 +1,7 @@
 module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
-  bucket = "shawn-hurst"
+  bucket_prefix = "shawn-hurst"
   acl    = "private"
 
   versioning = {
